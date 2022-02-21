@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --clear server.ts",
-    "tsc":"tsc",
-    "postinstall": "npm run tsc",
+    "build":"tsc -p .",
     "start": "node dist/server.js"
   },
   "keywords": [],
@@ -31,7 +30,6 @@
     "npm": "^8.5.1",
     "run": "^1.4.0",
     "ts-node-dev": "^1.1.8",
-    "tsc": "^2.0.4",
     "typescript": "^4.5.5"
   }
 }
